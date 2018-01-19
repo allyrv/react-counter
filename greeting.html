@@ -14,14 +14,28 @@
         render() {
           return (
             <div>
-              <h1>Hello World!</h1>
+              <h1>Hello world!</h1>
+            </div>
+          );
+        }
+      }
+
+      class Working extends React.Component {
+        render() {
+          return (
+            <div>
+              <iframe src="https://giphy.com/embed/mCRJDo24UvJMA" width="350" height="290" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
             </div>
           );
         }
       }
 
       ReactDOM.render(
-        <Greeting />, document.getElementById('app')
+        <div>
+        <Greeting />
+        <Working />
+        </div>,
+        document.getElementById('app')
       );
     </script>
   </body>
